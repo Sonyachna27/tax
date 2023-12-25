@@ -1,0 +1,48 @@
+.difference{
+
+    &__container{
+        &-title{
+            @include title-wrap;
+        }
+        ul{
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        &-content{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            @media screen and (max-width:767px) {
+                grid-template-columns:  1fr;
+            }
+            &-item{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 60px 40px;
+                border: 1px solid $--blue;
+                @media screen and (max-width:767px) {
+                    padding: 30px 20px;
+                }
+                h3{
+                    color: $--blue;
+                    position: relative;
+                    margin-left: 30px;
+                    &:before{
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        background-color: $--redBtn;
+                        position: absolute;
+                        border-radius: 50px;
+                        top: 50%;
+                        left: -23px;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        
+
+        }
+    }
+}

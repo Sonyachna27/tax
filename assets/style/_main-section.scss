@@ -1,0 +1,58 @@
+.main{
+    padding: 100px 0 0 0;
+    background: url(../images/main-bg.jpg) center center / cover no-repeat;
+    @media screen and (max-width:1023px) {
+        padding: 100px 0;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media screen and (max-width:1023px) {
+            grid-template-columns: 1fr;
+            max-width: 100%;
+            width: 100%;
+        }
+        &-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            max-width: 100%;
+            width: 100%;
+            h1{
+               
+                margin-top: 10px;
+                margin-bottom: 10px;
+                @media screen and (max-width:1023px) {
+                    max-width: 100%;
+                }
+            }
+           & p{
+            max-width: 579px;
+            margin-bottom: 40px;
+            color: $--white;
+           }
+        }
+        &-images{
+            position: relative;
+            @media screen and (max-width:1023px) {
+                display: none;
+            }
+            &-circle{
+                position: absolute;
+                top: -58px;
+                left: -101%;
+                max-width: 100%;
+                min-width: 764px;
+                height: 279.8px;
+                @media screen and (max-width:1210px) {
+                    min-width: 700px;
+                }
+                @media screen and (max-width:1110px) {
+                    min-width: 640px;
+                }
+            }
+        }
+    }
+}

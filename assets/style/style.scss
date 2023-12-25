@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../fonts/DMSans-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../fonts/DMSans-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../fonts/DMSans-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../fonts/DMSans-Bold.ttf);
+    font-weight: 700;
+}
+
+/*import */
+
+@import './root.scss';
+@import './reset.scss';
+@import './header.scss';
+@import './main-section.scss';
+@import './choose-section.scss';
+@import './about-section.scss';
+@import './services-section.scss';
+@import './team-section.scss';
+@import './book-section.scss';
+@import './footer.scss';
+@import './difference-section.scss';
+@import './staff-section.scss';
+@import './prices-section.scss';
+@import './pay-section.scss';
+@import './contact-section.scss';
+@import './tax-section.scss';
+
+

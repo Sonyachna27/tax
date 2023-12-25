@@ -1,0 +1,145 @@
+.book{
+    padding: 80px 0;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        &-title{
+            
+            @include title-wrap;
+
+            @media screen and (max-width:760px) {
+                flex-direction: column;
+                gap: 10px;
+                max-width: 100%;
+            }
+          
+        }
+        &-bottom{
+            display: grid;
+            grid-template-columns: .785fr 1.046fr;
+            
+            @media screen and (max-width:990px) {
+                grid-template-columns: 1fr;
+            }
+            &-img{
+                object-fit: cover;
+                height: 100%;
+                max-width: 100%;
+                width: 100%;
+               
+                @media screen and (max-width:990px) {
+                    width: 100%;
+                    max-height: 700px;
+                }
+            }
+            &-form{
+                border: 1px solid $--black;
+                width: 100%;
+                padding: 60px 40px;
+                display: block;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                @media screen and (max-width:990px) {
+                    padding: 40px 10px;
+                }
+
+                h3{
+                    font-style: normal;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    color: $--blue;
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 647px;
+                   & span{
+                    color: $--redBtn;
+                    }
+                }
+                form{
+                    display: grid;
+                    grid-template-columns:  1fr;
+                    position: relative;
+                       
+                    input, 
+                    textarea,
+                    select{
+                        border: 1px solid $--black;
+                        border-bottom: transparent;
+                        padding: 19px;
+                        outline: none;
+                        cursor: pointer;
+                        font-size: 14px;
+                        position: relative;
+                        &::placeholder{
+                            color: $--black;
+                            transition: all 0.3s ease-in-out;
+                            font: inherit;
+                        }
+
+                        &:focus::placeholder {
+                            transform: translateY(-15px);
+                            color: $--blue; 
+                        }
+                    }
+                    
+                    textarea{
+                        resize: none;
+                        margin-bottom: 40px;
+                        max-height: 140px;
+                        border-bottom:1px solid $--black;
+                    }
+                    .btn{
+                        max-width: 100%;
+                        border-color: transparent ;
+                        border-bottom: 1px solid $--redBtn; 
+                        padding: 14px 60px;
+                        @include btnHover;
+                    }
+                    .select-wrap {
+                        position: relative;
+                    
+                        &:before {
+                            content: '';
+                            width: 11px;
+                            height: 11px;
+                            position: absolute;
+                            right: 21px;
+                            top: 45%;
+                            z-index: 15;
+                            background: url(../images/Vector-select.svg) no-repeat; 
+                            transform: translateY(0) rotate(0); 
+                            transition: transform 0.3s ease; 
+                        }
+                    
+                        select {
+                            -moz-appearance: none;
+                            -webkit-appearance: none;
+                            appearance: none;
+                            position: relative;
+                            width: 100%;
+                            color: inherit;
+                            option {
+                                font: inherit;
+                                    display: block;
+                                    white-space: nowrap;
+                                color: #22272B;
+                                option:hover {
+                                    background-color: #bebbbb;
+                                }
+                        }
+                       
+                    }
+                                
+                    &:focus-within:before {
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                    }
+                    }
+                }
+            }
+            
+        }
+    }

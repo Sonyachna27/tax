@@ -1,0 +1,99 @@
+.contact{
+    &__container{
+        &-title{
+            @include title-wrap;
+        }
+        &-bottom{
+            margin-top: 120px;
+        display: grid;
+        grid-template-columns: .669fr 1fr;
+
+       
+        @media screen and (max-width:990px) {
+            grid-template-columns: 1fr;
+            margin-top: 60px;
+        }
+        &-content{
+            padding:95px 60px;
+            background-color: $--blue;
+            color: $--white;
+            @media screen and (max-width:560px) {
+                padding: 35px 10px;
+            }
+            h3{
+                
+                display: block;
+                margin-bottom: 40px;
+                max-height: 64px;
+                color: inherit;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: uppercase;
+                @media screen and (max-width:767px) {
+                    font-size: 28px;
+                }
+                @media screen and (max-width:767px) {
+                    font-size: 24px;
+                }
+            }
+            .contact{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                margin-bottom: 30px;
+                a,
+                span{
+                    display: flex;
+                    align-items: center;
+                    gap: 9px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    max-width: 100%;
+                    width: 100%;
+                    word-wrap: break-word; 
+                    overflow-wrap: break-word;
+                    & svg{
+                        min-width: fit-content;
+                    }
+                }
+                a:hover{
+                    color: $--redBtn;
+                        transition: .3s;
+                }
+               
+            }
+            & .social{
+                grid-template-columns: repeat(4, 1fr);
+                max-width: fit-content;
+                width: 100%;
+                gap: 15px;
+                img{
+                    min-width: 60px;
+                    max-width: 60px;
+                    width: 100%;
+
+                }
+                @media screen and (max-width:367px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+        iframe{
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            @media screen and (max-width:990px) {
+                grid-row: 1 / 1;
+                min-height: 560px;
+                height: 100%;
+            }
+            @media screen and (max-width:7670px) {
+                min-height: 360px;
+            }
+        }
+    }
+        }
+    }
