@@ -73,6 +73,7 @@
                         cursor: pointer;
                         font-size: 14px;
                         position: relative;
+                        border-radius: 0;
                         &::placeholder{
                             color: $--black;
                             transition: all 0.3s ease-in-out;
