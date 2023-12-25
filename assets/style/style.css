@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "DM Sans";
   src: url(../fonts/DMSans-Regular.ttf);
@@ -186,7 +187,7 @@ p {
   border-radius: 30px;
   border: 1px solid #000;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   .count-block {
     padding: 8.5px 18.5px;
   }
@@ -730,15 +731,19 @@ button {
   font-weight: 400;
   line-height: normal;
   font-size: 32px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal; /* або  */
+  white-space: pre-wrap;
 }
 @media screen and (max-width: 767px) {
   .services__container-accord-item-top p {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   .services__container-accord-item-top p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .services__container-accord-item-top .circle {
@@ -752,11 +757,21 @@ button {
   justify-content: center;
   border-radius: 50%;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   .services__container-accord-item-top .circle {
     width: 40px;
     height: 40px;
   }
+}
+@media screen and (max-width: 367px) {
+  .services__container-accord-item-top .circle {
+    width: 30px;
+    height: 30px;
+  }
+}
+.services__container-accord-item-top .circle svg {
+  width: 12px;
+  height: 12px;
 }
 .services__container-accord-item-content {
   display: none;
@@ -1028,6 +1043,7 @@ button {
   cursor: pointer;
   font-size: 14px;
   position: relative;
+  border-radius: 0;
 }
 .book__container-bottom-form form input::-moz-placeholder, .book__container-bottom-form form textarea::-moz-placeholder, .book__container-bottom-form form select::-moz-placeholder {
   color: #000;
@@ -1543,9 +1559,9 @@ button {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   .prices__container-content-item p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 767px) {

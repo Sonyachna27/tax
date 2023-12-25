@@ -45,6 +45,10 @@
                 }
                 & p{
                     @include accordTitle;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    white-space: normal; /* або  */
+                    white-space: pre-wrap;
                 }
                 
                 .circle{
@@ -57,10 +61,19 @@
                     align-items: center;
                     justify-content: center;
                     border-radius: 50%;
-                    @media screen and (max-width:360px) {
+                    @media screen and (max-width:480px) {
                       width: 40px;
                       height: 40px;
                      
+                    }
+                    @media screen and (max-width:367px) {
+                      width: 30px;
+                      height: 30px;
+                     
+                    }
+                    & svg{
+                      width: 12px;
+                      height: 12px;
                     }
                 }
                 
