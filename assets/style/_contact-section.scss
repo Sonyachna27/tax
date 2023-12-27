@@ -51,16 +51,18 @@
                     gap: 9px;
                     font-size: 16px;
                     font-weight: 500;
-                    max-width: -moz-fit-content;
-                    max-width: -webkit-fit-content;
-                    max-width: fit-content;
-                    width: fit-content;
-                    width: -moz-fit-content;
-                    width: -webkit-fit-content;
+                    // max-width: -moz-fit-content;
+                    // max-width: -webkit-fit-content;
+                    // max-width: fit-content;
+                    max-width: 290px;
+                    width: 100%;
+                    // width: -moz-fit-content;
+                    // width: -webkit-fit-content;
                     word-wrap: break-word; 
                     overflow-wrap: break-word; 
                     & svg{
-                        min-width: fit-content;
+                        width: 40px;
+                        height: 40px;
                     }
                 }
                 a:hover{
