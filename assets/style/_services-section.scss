@@ -72,8 +72,12 @@
                      
                     }
                     & svg{
-                      width: 12px;
+                      width: 18px;
+                      height: 18px;
+                      @media screen and (max-width:480px) {
+                        width: 12px;
                       height: 12px;
+                      }
                     }
                 }
                 

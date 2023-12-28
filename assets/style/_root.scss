@@ -24,13 +24,14 @@ $--black: #000;
         border-radius: 30px;
         background: $--blue;
         color: $--white;
+        font-weight: 700;
     }
     @media screen and (max-width:1023px) {
         flex-direction: column;
         align-items: flex-start;
     }
     p{
-        max-width: 400px;
+        max-width: 357px;
         font-size: 12px;
 
         @media screen and (max-width:1023px) {
@@ -144,6 +145,9 @@ p{
     max-width: 220px;
     border: 1px solid transparent;
     transition: .3s ease;
+    @media screen and (max-width:367px) {
+        padding: 13.5px 18.5px;
+    }
 }
 .btn:hover{
     background-color: transparent;
@@ -202,9 +206,16 @@ p{
     gap: 10px;
     border-radius: 30px;
     border: 1px solid #000;
+    font-weight: 700;
+    max-width: fit-content;
+
+    @media screen and (max-width:767px) {
+      max-width: 100%;
+    }
     @media screen and (max-width:480px) {
       padding: 8.5px 18.5px;
     }
+    
 }
 .social{
     display: grid;
