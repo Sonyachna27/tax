@@ -408,6 +408,7 @@ button {
     align-items: center;
     justify-content: center;
     display: flex;
+    padding: 0;
   }
 }
 .main__container {
