@@ -12,6 +12,9 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
+        .services-page & {
+          margin-bottom: 0;
+        }
         &-item {
             
             max-width: 100%;
