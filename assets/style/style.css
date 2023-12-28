@@ -710,6 +710,9 @@ button {
   flex-direction: column;
   margin-bottom: 40px;
 }
+.services-page .services__container-accord {
+  margin-bottom: 0;
+}
 .services__container-accord-item {
   max-width: 100%;
   width: 100%;
@@ -955,6 +958,11 @@ button {
 
 .book {
   padding: 80px 0;
+}
+@media screen and (max-width: 767px) {
+  .book {
+    padding: 40px 0;
+  }
 }
 .book__container {
   display: flex;
@@ -1648,6 +1656,7 @@ button {
 }
 .prices__container-content-item .count-block {
   white-space: nowrap;
+  font-weight: 400;
 }
 
 .pay__container-title {
