@@ -9,10 +9,6 @@
                 max-width: 100%;
                 width: 100%;
                 object-fit: cover;
-                min-height: 200px;
-                @media screen and (max-width:767px) {
-                    object-fit: fill; 
-                }
             }
             &-text{
                 display: grid;

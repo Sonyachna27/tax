@@ -82,6 +82,7 @@
             flex-direction: column;
             gap: 40px;
             background-color: $--blue;
+            justify-content: center;
         }
         .open & {
             transform: translateX(0);
