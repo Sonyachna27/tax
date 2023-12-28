@@ -111,14 +111,14 @@
 
                position: relative;
                @media screen and (max-width:1023px) {
-                flex-direction: column;
-                            padding: 35px 20px;
+                            padding: 40px 0px;
                             gap: 20px;
-                            grid-template-columns: 1fr;
+                            
                     
                }
-               @media screen and (max-width:767px) {
-                            padding: 35px 0px;
+               
+               @media screen and (max-width:580px) {
+                    grid-template-columns: 1fr;
                     
                }
                    &:before{
@@ -141,23 +141,25 @@
                            left: 0;
                        }
                    }
-                   & .white-count{
-                        display: inline-flex;
-                        padding: 8.5px 28.5px;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        border-radius: 30px;
-                        border: 1px solid #000;
-                        font-weight: 700;
-                        margin-right: auto;
-                        max-height: 37px;
-                        @media screen and (max-width:767px) {
-                          padding: 8.5px 18.5px;
-                        }
                   
-                }  
-                
+                & p{
+                    max-width: 510px;
+                }
+                & img{
+                    max-width: 290px;
+                     width: 100%;
+                    max-height: 360px;
+                    height: 100%;
+                    object-fit: cover;
+                    margin-left: auto;
+                    @media  screen and (max-width:1023px) {
+                    max-width: 100%;
+                    }
+                    @media screen and (max-width:580px) {
+                        min-height: 360px;
+                        max-height: 100%;
+                   }
+                   }
                 &-title{
                     display: flex;
                    align-items: flex-start;
@@ -168,22 +170,12 @@
                    @media screen and (max-width:367px) {
                     flex-direction: column;
                    }
-                   & img{
-                    max-width: 290px;
-                     width: 100%;
-                    max-height: 360px;
-                    height: 100%;
-                    object-fit: cover;
-                    @media  screen and (max-width:1023px) {
-                    max-width: 100%;
-                    }
-                   }
+                  
                 }
                 &-text{
+                    
                     display: flex;
                     flex-direction: column;
-                    // max-width: 510px;
-                    // width: 100%;
                     align-items: flex-start;
                     justify-content: center;
                     gap: 20px;
@@ -191,18 +183,54 @@
                     @media screen and (max-width:1023px) {
                         max-width: 100%;
                     }
-                    & p{
-                        max-width: 510px;
-                    }
-                    & span{
+                    & div{
+                        position: relative;
                         color: $--blue;
                         font-size: 32px;
                         font-weight: 700;
                         text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
                         @media screen and (max-width:367px) {
                         font-size: 18px;
                         }
-                     }
+                     
+                    & .white-count{
+                        display: inline-flex;
+                        padding: 8.5px 28.5px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        border-radius: 30px;
+                        border: 1px solid #000;
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: $--black;
+                        max-height: 37px; 
+                        position: absolute;
+                        top: -77px;                
+                        left: calc(-35vw); 
+                        @media screen and (min-width:1360px) {
+                            left: calc(-28vw - 78px); 
+                        }  
+                        @media screen and (min-width:1580px) {
+                            left: -525px;
+                        } 
+                        @media screen and (max-width:1185px) {
+                            left: calc(-40vw); 
+                        } 
+                        
+                              
+                                   
+                                  
+                        @media screen and (max-width:1023px) {
+                            position: relative;
+                            left: 0;
+                            top: 0;
+                        }           
+                }  
+            }
                 }
                 
             

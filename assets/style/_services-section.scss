@@ -47,7 +47,7 @@
                     @include accordTitle;
                     word-wrap: break-word;
                     overflow-wrap: break-word;
-                    white-space: normal; /* або  */
+                    white-space: normal; 
                     white-space: pre-wrap;
                 }
                 
@@ -80,7 +80,7 @@
               }
             &-content {
                 display: none;
-                padding: 40px 40px 40px 116px;
+                padding: 40px 40px 0px 116px;
                 
                 @media screen and (max-width:767px) {
                   padding: 20px 0;
