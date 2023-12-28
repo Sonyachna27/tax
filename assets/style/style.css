@@ -357,7 +357,7 @@ button {
   .header__container-nav {
     position: fixed;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 100vh;
     top: 80px;
     left: 0;
     padding: 20px;
